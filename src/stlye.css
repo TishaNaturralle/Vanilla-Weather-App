@@ -1,3 +1,30 @@
 h1 {
   color: blue;
 }
+.phw {
+  color: grey;
+}
+.current-city {
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+}
+.col {
+  text-align: center;
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: lighter;
+  color: grey;
+}
+.day {
+  font-weight: 900;
+  font-size: 20px;
+  color: blue;
+}
+.weather-icon {
+  font-size: 50px;
+}
+footer {
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
