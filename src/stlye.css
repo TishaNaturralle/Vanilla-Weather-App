@@ -1,52 +1,28 @@
-h1 {
-  color: blue;
-}
-
 body {
-  max-width: 700px;
-  border: 1px solid black;
-  margin: 0 auto;
-  padding: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
-}
-.phw {
-  color: rgb(243, 23, 23);
-}
-.current-city {
   font-family: Arial, Helvetica, sans-serif;
-  color: green;
-}
-.col {
-  text-align: center;
-  font-family: monospace;
-  font-size: 25px;
-  font-weight: lighter;
-  color: grey;
-}
-.day {
-  font-weight: 900;
-  font-size: 20px;
-  color: blue;
-}
-.format {
-  border-radius: 30px;
-  display: block;
-  margin: 0 auto;
 }
 
-.weather-icon {
-  font-size: 50px;
+.weather-app {
+  max-width: 600xp;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
 }
-footer {
-  color: grey;
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
+h1 {
+  color: rgb(135, 135, 135);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(135, 135, 135);
 }
