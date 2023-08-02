@@ -1,5 +1,4 @@
-let apiKey = "dt7522ba4c017dfaoc53ab6bcb9a6246";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?
-query=Worcestor&key=dt7522ba4c017dfaoc53ab6bcb9a6246=${apiKey}&units=metric`;
+let apiKey = "70311dba46678b98a833492e1d519ca7";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Worcester&appid=${apiKey}&units=metric`;
 
 console.log(apiUrl);
