@@ -42,10 +42,23 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
-let apiKey = "70311dba46678b98a833492e1d519ca7";
-let city = "Worcester";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?
+
+function search(city) {
+  let apiKey = "70311dba46678b98a833492e1d519ca7";
+  let city = "Worcester";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?
 q=${city}&appid=${apiKey}&units=metric`;
 
-console.log(apiUrl);
-axios.get(apiUrl).then(displayTemperature);
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Worcester");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
