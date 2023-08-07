@@ -21,13 +21,12 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Thu", "Fri", "Sat", "Sun"];
-
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastingDay) {
     forecastHTML =
       forecastHTML +
       `
@@ -43,6 +42,8 @@ function displayForecast(response) {
           <span class="weather-forecast-temperature-min"> 12° </span>
         </div>
       </div>
+</div>
+
   `;
   });
 
