@@ -40,7 +40,7 @@ function displayForecast(response) {
         forecastHTML +
         `
       <div class="col-2">
-        <div class="weather-forecast-date">${formatDay(forecastDay.dt}</div>
+        <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
        <img
           src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
@@ -59,16 +59,16 @@ function displayForecast(response) {
         </div>
       </div>
       `;
-          }
-        });
+    }
+  });
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
 function getForecast(coordinates) {
-  let apiKey = "70311dba46678b98a833492e1d519ca7";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric';
+  let apiKey = "281450ec88936f4fa8ee9864682b49a0";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -99,7 +99,7 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "70311dba46678b98a833492e1d519ca7";
+  let apiKey = "281450ec88936f4fa8ee9864682b49a0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?
 q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
@@ -111,10 +111,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-
 
 search("Worcester");
